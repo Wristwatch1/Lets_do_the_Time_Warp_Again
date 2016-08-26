@@ -11,6 +11,10 @@
     <sprite>sprites\sprWall</sprite>
     <sprite>sprites\sprCloneWall</sprite>
     <sprite>sprites\sprPlayerWall</sprite>
+    <sprite>sprites\sprDoorPlace</sprite>
+    <sprite>sprites\sprDoorTop</sprite>
+    <sprite>sprites\sprDoorBottom</sprite>
+    <sprite>sprites\sprButton</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
@@ -28,6 +32,12 @@
     <object>objects\platform</object>
     <object>objects\objCloneWall</object>
     <object>objects\objPlayerWall</object>
+    <objects name="Door Thing">
+      <object>objects\objDoorTop</object>
+      <object>objects\objDoorBottom</object>
+      <object>objects\objGlobal_VariableSetter</object>
+      <object>objects\objButton</object>
+    </objects>
   </objects>
   <rooms name="rooms">
     <room>rooms\room0</room>
