@@ -20,6 +20,10 @@
     <object>objects\objClone</object>
     <object>objects\object2</object>
     <object>objects\objGlobal_TimeRecorder</object>
+    <object>objects\Invinciblock</object>
+    <object>objects\objPlayer_new</object>
+    <object>objects\objTimer</object>
+    <object>objects\platform</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\room0</room>
