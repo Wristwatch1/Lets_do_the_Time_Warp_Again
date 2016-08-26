@@ -35,7 +35,7 @@ gravity = 1;
 spd = 7;
 vaccel = 0;
 walldir = 0;
-jump_height = 24
+jump_height = 12
 grounded = false
 
 </string>
@@ -84,7 +84,15 @@ key_held = false;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (keyboard_check(ord("D")))
+            <string>if (place_meeting(x,y+1,objGround))
+{
+    grounded = true
+}
+else
+{
+    grounded = false
+}
+if (keyboard_check(ord("D")))
 {
     hspeed = 5;
 }
@@ -125,7 +133,7 @@ if ((keyboard_check_released(vk_space) || keyboard_check_released(ord("W"))))
         </arguments>
       </action>
     </event>
-    <event eventtype="4" ename="object2">
+    <event eventtype="4" ename="objGround">
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -142,8 +150,7 @@ if ((keyboard_check_released(vk_space) || keyboard_check_released(ord("W"))))
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>
-if (!place_free(x+hspeed,y))
+            <string>if (!place_free(x+hspeed,y))
 {
     if (hspeed&lt;=0){move_contact_solid(180,abs(hspeed));}
     if (hspeed&gt;0){move_contact_solid(0,abs(hspeed));}

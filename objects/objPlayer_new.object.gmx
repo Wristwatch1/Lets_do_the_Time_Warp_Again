@@ -302,7 +302,7 @@ if (!place_free(x+hspeed,y+vspeed))
         </arguments>
       </action>
     </event>
-    <event eventtype="4" ename="object2">
+    <event eventtype="4" ename="objGround">
       <action>
         <libid>1</libid>
         <id>603</id>

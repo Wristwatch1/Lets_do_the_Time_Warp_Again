@@ -18,7 +18,7 @@
   <objects name="objects">
     <object>objects\objPlayer</object>
     <object>objects\objClone</object>
-    <object>objects\object2</object>
+    <object>objects\objGround</object>
     <object>objects\objGlobal_TimeRecorder</object>
     <object>objects\Invinciblock</object>
     <object>objects\objPlayer_new</object>
