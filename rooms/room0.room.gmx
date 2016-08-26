@@ -83,6 +83,8 @@
     <instance objName="objDoorBottom" x="496" y="184" name="inst_033D9A8B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objGlobal_VariableSetter" x="192" y="224" name="inst_7EF3C271" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objButton" x="480" y="320" name="inst_89E49FB1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objGround" x="400" y="304" name="inst_A827661D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objGround" x="400" y="448" name="inst_70A98960" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

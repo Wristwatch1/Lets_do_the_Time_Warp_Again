@@ -77,7 +77,7 @@ if (recording)
     if(objPlayer.max_jump == false &amp;&amp; objPlayer.grounded == false)
     {
         global.time_array[global.move_count, 0] = 3;
-        global.time_array[global.move_count, 1]+= 1;
+        global.time_array[global.move_count, 1] +=2;
     }
     if (keyboard_check_released(vk_space))
     {
