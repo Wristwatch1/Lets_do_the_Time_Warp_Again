@@ -9,6 +9,8 @@
     <sprite>sprites\sprTimePlayer</sprite>
     <sprite>sprites\sprTimeClone</sprite>
     <sprite>sprites\sprWall</sprite>
+    <sprite>sprites\sprCloneWall</sprite>
+    <sprite>sprites\sprPlayerWall</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
@@ -24,6 +26,8 @@
     <object>objects\objPlayer_new</object>
     <object>objects\objTimer</object>
     <object>objects\platform</object>
+    <object>objects\objCloneWall</object>
+    <object>objects\objPlayerWall</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\room0</room>
