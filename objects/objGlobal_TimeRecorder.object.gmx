@@ -61,6 +61,24 @@ global.timer = 0; //How long has the current move lasted
     global.time_array[global.move_count, 0] = 1;
     global.time_array[global.move_count, 1]+= 1;
 }
+
+if (keyboard_check(ord("D")))
+{
+    //Left
+    global.time_array[global.move_count, 0] = 2;
+    global.time_array[global.move_count, 1]+= 1;
+}
+if(objPlayer.max_jump == false &amp;&amp; objPlayer.grounded == false)
+{
+    global.time_array[global.move_count, 0] = 3;
+    global.time_array[global.move_count, 1]+= 1;
+}
+if (keyboard_check_released(vk_space))
+{
+    global.move_count+=1;
+    global.time_array[global.move_count, 0] = 0;
+    global.time_array[global.move_count, 1] = 0;
+}
 if (keyboard_check_released(ord("A")))
 {
     global.move_count+=1;
@@ -73,23 +91,8 @@ if (keyboard_check_released(ord("D")))
     global.time_array[global.move_count, 0] = 0;
     global.time_array[global.move_count, 1] = 0;
 }
-if (keyboard_check(ord("D")))
-{
-    //Left
-    global.time_array[global.move_count, 0] = 2;
-    global.time_array[global.move_count, 1]+= 1;
-}
-if(objPlayer.grounded == false)
-{
-    global.time_array[global.move_count, 0] = 3;
-    global.time_array[global.move_count, 1]+= 1;
-}
-if (keyboard_check_released(vk_space))
-{
-    global.move_count+=1;
-    global.time_array[global.move_count, 0] = 0;
-    global.time_array[global.move_count, 1] = 0;
-}
+
+
 if (keyboard_check_released(ord("Z")))
 {
     instance_create(objPlayer.xstart,objPlayer.ystart+144,objClone);
