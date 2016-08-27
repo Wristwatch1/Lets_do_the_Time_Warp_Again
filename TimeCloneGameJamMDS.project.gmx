@@ -20,14 +20,23 @@
   <backgrounds name="background"/>
   <paths name="paths"/>
   <scripts name="scripts">
-    <script>scripts\script0.gml</script>
+    <scripts name="Time Recorder Script Stuff">
+      <script>scripts\jump.gml</script>
+      <script>scripts\stop_jump.gml</script>
+      <script>scripts\move_left.gml</script>
+      <script>scripts\move_right.gml</script>
+      <script>scripts\stop_move.gml</script>
+      <script>scripts\destroy_self.gml</script>
+      <script>scripts\blank_move.gml</script>
+    </scripts>
   </scripts>
   <objects name="objects">
     <object>objects\objPlayer</object>
     <object>objects\objClone</object>
     <object>objects\objGround</object>
-    <object>objects\objGlobal_TimeRecorder</object>
+    <object>objects\objGlobal_NewTimeRecorder</object>
     <object>objects\Invinciblock</object>
+    <object>objects\objGlobal_TimeRecorder</object>
     <object>objects\objPlayer_new</object>
     <object>objects\objTimer</object>
     <object>objects\platform</object>
@@ -42,6 +51,9 @@
     <object>objects\objTime_Wraith</object>
     <object>objects\objWall</object>
   </objects>
+  <timelines name="timelines">
+    <timeline>timelines\time_record</timeline>
+  </timelines>
   <rooms name="rooms">
     <room>rooms\room0</room>
   </rooms>
