@@ -27,7 +27,14 @@
     <sprite>sprites\sprIdleClone</sprite>
     <sprite>sprites\sprRecorderGuy</sprite>
   </sprites>
-  <backgrounds name="background"/>
+  <backgrounds name="background">
+    <background>background\background0</background>
+    <background>background\background1</background>
+    <background>background\background2</background>
+    <background>background\background3</background>
+    <background>background\background4</background>
+    <background>background\background5</background>
+  </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
     <scripts name="Time Recorder Script Stuff">
@@ -44,6 +51,7 @@
     <object>objects\objPlayer</object>
     <object>objects\objClone</object>
     <object>objects\objGround</object>
+    <object>objects\objInvisiGround</object>
     <object>objects\objGlobal_NewTimeRecorder</object>
     <object>objects\Invinciblock</object>
     <object>objects\objGlobal_TimeRecorder</object>
