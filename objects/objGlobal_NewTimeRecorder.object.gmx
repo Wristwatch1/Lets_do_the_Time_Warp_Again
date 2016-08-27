@@ -74,7 +74,7 @@ global.script_hold[0, 0] = 0;
         recording = false;
         for (var i = array_height_2d(global.script_hold)-1; i != 0; i--)
         {
-            if (global.script_hold[i, 0] !=0)
+            if (global.script_hold[i, 0] !=-4)
             {
                 timeline_moment_add_script(time_record, i, global.script_hold[i, 0]);
             }
@@ -164,8 +164,10 @@ if (keyboard_check_released(ord("H")))
     
     if (recording == true)
     {
-        cancel_rec = 25;
+        
         recording = false;
+        cancel_rec = 25;
+        alarm[0] = 0;
         for (var i = array_height_2d(global.script_hold)-1; i != 0; i--)
         {
             if (global.script_hold[i, 0] !=-4)

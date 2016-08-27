@@ -43,7 +43,8 @@ right_move = false;
 timeline_index = time_record;
 timeline_speed = 1;
 timeline_running = true;
-
+image_speed = 0.5
+scale = 1;
 </string>
           </argument>
         </arguments>
@@ -118,6 +119,7 @@ global.step_counter = 0;
           <argument>
             <kind>1</kind>
             <string>//timeline_position+=1;
+image_xscale = scale;
 if(timeline_position &gt; timeline_max_moment(time_record))
 {
     image_alpha-= 0.01;
@@ -156,6 +158,18 @@ if (in_air)
         gravity = 1;
     }
 }  
+if (hspeed !=0)
+{
+    scale = sign(hspeed);
+}
+if(hspeed == 0)
+{
+    sprite_index = sprIdleClone;
+}
+else
+{
+    sprite_index = sprTimeClone;
+}
 </string>
           </argument>
         </arguments>
@@ -225,7 +239,11 @@ if (!place_free(x+hspeed,y+vspeed))
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (!place_free(x+hspeed,y))
+            <string>with(other)
+{
+    solid = true;
+}
+if (!place_free(x+hspeed,y))
 {
     if (hspeed&lt;=0){move_contact_solid(180,abs(hspeed));}
     if (hspeed&gt;0){move_contact_solid(0,abs(hspeed));}

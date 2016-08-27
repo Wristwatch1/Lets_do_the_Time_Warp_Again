@@ -18,6 +18,8 @@
     <sprite>sprites\sprTimeWraith</sprite>
     <sprite>sprites\sprElevator</sprite>
     <sprite>sprites\sprite11</sprite>
+    <sprite>sprites\sprIdlePlayer</sprite>
+    <sprite>sprites\sprIdleClone</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
