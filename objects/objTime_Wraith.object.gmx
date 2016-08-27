@@ -33,6 +33,22 @@ speed=5;
         </arguments>
       </action>
     </event>
+    <event eventtype="4" ename="objGround">
+      <action>
+        <libid>1</libid>
+        <id>113</id>
+        <kind>0</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>1</exetype>
+        <functionname>action_reverse_xdir</functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+      </action>
+    </event>
     <event eventtype="4" ename="objClone">
       <action>
         <libid>1</libid>
