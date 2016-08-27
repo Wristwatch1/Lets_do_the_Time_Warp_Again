@@ -40,7 +40,7 @@ starting_y = 0;
 moved = false;
 not_moving = 0;
 moving = false;
-cancel_rec = 7;
+cancel_rec = 25;
 global.step_number = 0;
 global.script_hold[0, 0] = 0;
 </string>
@@ -80,7 +80,7 @@ global.script_hold[0, 0] = 0;
             }
         }
         //tim
-        cancel_rec = 7;
+        cancel_rec = 25;
     }
     else
     {
@@ -181,7 +181,12 @@ if (keyboard_check_released(ord("H")))
         //timeline_moment_add_script(time_record, global.step_number+2, stop_jump);
         starting_x = objPlayer.x
         starting_y = objPlayer.y
+        //global.script_hold = 0;
+        timeline_clear(time_record);
+        global.step_number = 0;
+        timeline_index = -1;
         recording = true;
+        cancel_rec = 25;
         alarm[0] = room_speed;
         exit;
     }
