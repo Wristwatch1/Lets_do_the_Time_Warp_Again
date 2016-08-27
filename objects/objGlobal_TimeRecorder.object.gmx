@@ -25,7 +25,10 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>recording = false;
+            <string>key_left = false;
+key_right = false;
+key_jump = false;
+recording = false;
 global.move_count = 0; //Which move the player is on currently
 global.time_array[0, 0] = 0; //How many Movement counts are in the array
 global.time_array[0, 1] = 0;
@@ -36,6 +39,9 @@ global.timer = 0; //How long has the current move lasted
 //3 Being Jump
 starting_x = 0;
 starting_y = 0;
+moved = false;
+not_moving = 0;
+moving = false;
 </string>
           </argument>
         </arguments>
@@ -59,15 +65,57 @@ starting_y = 0;
           <argument>
             <kind>1</kind>
             <string>///Script for Recording Time, Change values to Change stuff
+key_left = keyboard_check_direct(ord("A"))
+key_right = keyboard_check_direct(ord("D"))
+key_jump = keyboard_check_direct(vk_space);
 if (recording)
 {
+    if (keyboard_check_pressed(vk_space))
+    {
+        if(not_moving &gt; 0)
+        {
+            global.move_count+=1;
+            global.time_array[global.move_count, 0] = 4;
+            global.time_array[global.move_count, 1] = not_moving;
+            not_moving = 0;
+        }
+        global.move_count+=1;
+        global.time_array[global.move_count, 0] = 0;
+        global.time_array[global.move_count, 1] = 0;
+    }
+    if (keyboard_check_pressed(ord("A")))
+    {
+        if(not_moving &gt; 0)
+        {
+            global.move_count+=1;
+            global.time_array[global.move_count, 0] = 4;
+            global.time_array[global.move_count, 1] = not_moving;
+            not_moving = 0;
+        }
+        global.move_count+=1;
+        global.time_array[global.move_count, 0] = 0;
+        global.time_array[global.move_count, 1] = 0;
+    }
+    if (keyboard_check_pressed(ord("D")))
+    {
+        if(not_moving &gt; 0)
+        {
+            global.move_count+=1;
+            global.time_array[global.move_count, 0] = 4;
+            global.time_array[global.move_count, 1] = not_moving;
+            not_moving = 0;
+        }
+        global.move_count+=1;
+        global.time_array[global.move_count, 0] = 0;
+        global.time_array[global.move_count, 1] = 0;
+    }
+    
     if (keyboard_check(ord("A")))
     {
         //Left
         global.time_array[global.move_count, 0] = 1;
         global.time_array[global.move_count, 1]+= 1;
     }
-    
     if (keyboard_check(ord("D")))
     {
         //Left
@@ -77,26 +125,23 @@ if (recording)
     if(objPlayer.max_jump == false &amp;&amp; objPlayer.grounded == false)
     {
         global.time_array[global.move_count, 0] = 3;
-        global.time_array[global.move_count, 1] +=2;
+        global.time_array[global.move_count, 1] +=3;
+        /*if (keyboard_check(ord("A")))
+        {
+            global.time_array[global.move_count, 2] = 1;
+            global.time_array[global.move_count, 3]+= 1;
+        }
+        if (keyboard_check(ord("D")))
+        {
+            global.time_array[global.move_count, 2] = 2;
+            global.time_array[global.move_count, 3]+= 1;
+        }*/
     }
-    if (keyboard_check_released(vk_space))
+    if(!key_left &amp;&amp; !key_right &amp;&amp; !key_jump &amp;&amp; objPlayer.hspeed == 0 &amp;&amp; objPlayer.vspeed == 0 &amp;&amp; objPlayer.grounded == true)
     {
-        global.move_count+=1;
-        global.time_array[global.move_count, 0] = 0;
-        global.time_array[global.move_count, 1] = 0;
+       not_moving+=1;
     }
-    if (keyboard_check_released(ord("A")))
-    {
-        global.move_count+=1;
-        global.time_array[global.move_count, 0] = 0;
-        global.time_array[global.move_count, 1] = 0;
-    }
-    if (keyboard_check_released(ord("D")))
-    {
-        global.move_count+=1;
-        global.time_array[global.move_count, 0] = 0;
-        global.time_array[global.move_count, 1] = 0;
-    }
+
 }
 if (keyboard_check_released(ord("H")))
 {
@@ -117,7 +162,7 @@ if (keyboard_check_released(ord("H")))
 
 if (keyboard_check_released(ord("Z")))
 {
-    instance_create(starting_x,starting_y+144,objClone);
+    instance_create(starting_x,starting_y,objClone);
 }
 </string>
           </argument>
