@@ -164,6 +164,7 @@ if (keyboard_check_released(ord("H")))
     
     if (recording == true)
     {
+        cancel_rec = 25;
         recording = false;
         for (var i = array_height_2d(global.script_hold)-1; i != 0; i--)
         {
@@ -184,9 +185,10 @@ if (keyboard_check_released(ord("H")))
         //global.script_hold = 0;
         timeline_clear(time_record);
         global.step_number = 0;
+        global.script_hold = 0;
         timeline_index = -1;
         recording = true;
-        cancel_rec = 25;
+        
         alarm[0] = room_speed;
         exit;
     }
