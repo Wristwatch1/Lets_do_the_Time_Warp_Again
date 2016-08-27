@@ -67,9 +67,10 @@ scale = 1;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>timeline_clear(time_record)
+            <string>//timeline_clear(time_record)
 timeline_index = -1;
 global.step_counter = 0;
+global.playing = false;
 </string>
           </argument>
         </arguments>
@@ -119,6 +120,10 @@ global.step_counter = 0;
           <argument>
             <kind>1</kind>
             <string>//timeline_position+=1;
+if(timeline_size(time_record) == 0)
+{
+    image_alpha-= 0.01;
+}
 image_xscale = scale;
 if(timeline_position &gt; timeline_max_moment(time_record))
 {

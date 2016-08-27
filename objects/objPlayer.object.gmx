@@ -181,15 +181,15 @@ else
   
 if (!place_free(x,y+vspeed))
 {
-    if (vspeed&lt;=0){move_contact_solid(90,abs(vspeed));}
+    //if (vspeed&lt;=0){move_contact_solid(90,abs(vspeed));}
     if (vspeed&gt;0)
     {
         move_contact_solid(270,abs(vspeed));
         jumping = false;
         max_jump = false;
-        
+        vspeed = 0;
     }
-    vspeed = 0;
+    
     
 }
  

@@ -26,6 +26,10 @@
           <argument>
             <kind>1</kind>
             <string>image_index = objGlobal_NewTimeRecorder.recording;
+if (global.playing == true)
+{
+    image_index = 2;
+}
 </string>
           </argument>
         </arguments>

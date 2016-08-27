@@ -48,21 +48,43 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if(place_meeting(x,y-1,objPlayer))
+            <string>if(place_meeting(x,y-1,objPlayer) &amp;&amp; (objPlayer.y &lt; y))
 {
     objPlayer.y-=4;
     y-=3;
 }
 else if(place_meeting(x,y-1,objClone))
 {
-    objClone.y-=4;
-    y-=3;
+    if (objClone.y &lt; y)
+    {
+        objClone.y-=4;
+        y-=3;
+    }
 }
 else
 {
     if(y != start_pos)
     {
         y+=3;
+    }
+}
+if (objPlayer.y+(objPlayer.sprite_height/2) &lt; y)
+{
+    solid = true;
+}
+else
+{
+    solid = false;
+}
+if (instance_exists(objClone))
+{
+    if ((objClone.y+(objClone.sprite_width/2) &lt; y))
+    {
+        solid = true;
+    }
+    else
+    {
+        solid = false;
     }
 }
 </string>
