@@ -43,7 +43,7 @@ right_move = false;
 timeline_index = time_record;
 timeline_speed = 1;
 timeline_running = true;
-image_speed = 0.5
+image_speed = 0.2
 scale = 1;
 </string>
           </argument>

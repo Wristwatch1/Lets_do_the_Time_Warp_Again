@@ -334,6 +334,8 @@
     <instance objName="objGround" x="960" y="208" name="inst_2BDFE0E7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objGround" x="992" y="208" name="inst_DF7E628A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objCloneWall" x="176" y="560" name="inst_1BAE989E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objGlobal_SoundController" x="432" y="320" name="inst_D014728F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_RecordingSprite" x="944" y="16" name="inst_AE512FC9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

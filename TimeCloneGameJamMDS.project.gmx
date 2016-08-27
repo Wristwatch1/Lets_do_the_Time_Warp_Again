@@ -4,7 +4,12 @@
     <Config>Configs\Default</Config>
   </Configs>
   <NewExtensions/>
-  <sounds name="sound"/>
+  <sounds name="sound">
+    <sound>sound\snd_Jump</sound>
+    <sound>sound\snd_Playback</sound>
+    <sound>sound\snd_Record</sound>
+    <sound>sound\snd_ScienceSong</sound>
+  </sounds>
   <sprites name="sprites">
     <sprite>sprites\sprTimePlayer</sprite>
     <sprite>sprites\sprTimeClone</sprite>
@@ -20,6 +25,7 @@
     <sprite>sprites\sprite11</sprite>
     <sprite>sprites\sprIdlePlayer</sprite>
     <sprite>sprites\sprIdleClone</sprite>
+    <sprite>sprites\sprRecorderGuy</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
@@ -56,6 +62,8 @@
     <object>objects\objWall</object>
     <object>objects\objElevator</object>
     <object>objects\objDrawText</object>
+    <object>objects\objGlobal_SoundController</object>
+    <object>objects\obj_RecordingSprite</object>
   </objects>
   <timelines name="timelines">
     <timeline>timelines\time_record</timeline>
