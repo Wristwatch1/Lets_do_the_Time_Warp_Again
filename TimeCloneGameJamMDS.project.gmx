@@ -96,6 +96,7 @@
     <timeline>timelines\time_record</timeline>
   </timelines>
   <rooms name="rooms">
+    <room>rooms\Level5</room>
     <room>rooms\Main_Menu</room>
     <room>rooms\Level1</room>
     <room>rooms\Level2</room>
