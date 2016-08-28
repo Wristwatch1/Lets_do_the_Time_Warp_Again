@@ -35,6 +35,7 @@
     <background>background\background3</background>
     <background>background\background4</background>
     <background>background\background5</background>
+    <background>background\background6</background>
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
@@ -54,11 +55,9 @@
     <object>objects\objGround</object>
     <object>objects\objInvisiGround</object>
     <object>objects\objGlobal_NewTimeRecorder</object>
-    <object>objects\Invinciblock</object>
     <object>objects\objGlobal_TimeRecorder</object>
     <object>objects\objPlayer_new</object>
     <object>objects\objTimer</object>
-    <object>objects\platform</object>
     <object>objects\objCloneWall</object>
     <object>objects\objPlayerWall</object>
     <objects name="Door Thing">
@@ -76,15 +75,16 @@
     <object>objects\objGlobal_SoundController</object>
     <object>objects\obj_RecordingSprite</object>
     <object>objects\objPlayer_new_new</object>
+    <object>objects\objExit</object>
   </objects>
   <timelines name="timelines">
     <timeline>timelines\time_record</timeline>
   </timelines>
   <rooms name="rooms">
+    <room>rooms\Main_Menu</room>
     <room>rooms\Level_3</room>
     <room>rooms\Level2</room>
     <room>rooms\Level1</room>
-    <room>rooms\Main_Menu</room>
     <room>rooms\Level_Select</room>
   </rooms>
   <help>
