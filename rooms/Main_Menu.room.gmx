@@ -84,7 +84,6 @@
     <instance objName="objInvisiGround" x="960" y="657" name="inst_9B5DE87F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objInvisiGround" x="992" y="657" name="inst_04D4E85E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objPlayer" x="432" y="624" name="inst_9FDF79E4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objGlobal_VariableSetter" x="176" y="272" name="inst_A56257FD" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objGlobal_SoundController" x="112" y="288" name="inst_E0A67048" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objExit" x="0" y="640" name="inst_9F461057" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objExit" x="0" y="624" name="inst_4511CE1E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>

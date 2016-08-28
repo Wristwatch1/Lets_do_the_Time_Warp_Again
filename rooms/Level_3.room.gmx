@@ -56,7 +56,6 @@
     <instance objName="objGlobal_VariableSetter" x="192" y="224" name="inst_7EF3C271" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objButton" x="896" y="432" name="inst_89E49FB1" locked="0" code="" scaleX="2" scaleY="2" colour="4294967295" rotation="0"/>
     <instance objName="objGlobal_NewTimeRecorder" x="96" y="304" name="inst_B9003970" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objDrawText" x="16" y="32" name="inst_56A59129" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objGlobal_SoundController" x="432" y="320" name="inst_D014728F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_RecordingSprite" x="864" y="16" name="inst_34D78934" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objInvisiGround" x="0" y="656" name="inst_6149901D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -170,6 +169,7 @@
     <instance objName="objGround" x="800" y="528" name="inst_A466ADCA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objElevator" x="496" y="624" name="inst_19B04806" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objInvisiGround" x="928" y="432" name="inst_449BBB66" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objPortal" x="896" y="562" name="inst_32D3CD31" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

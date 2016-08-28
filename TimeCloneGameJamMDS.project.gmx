@@ -27,6 +27,8 @@
     <sprite>sprites\sprIdlePlayer</sprite>
     <sprite>sprites\sprIdleClone</sprite>
     <sprite>sprites\sprRecorderGuy</sprite>
+    <sprite>sprites\sprPortal</sprite>
+    <sprite>sprites\sprDeadPlayer</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\background0</background>
@@ -37,6 +39,8 @@
     <background>background\background5</background>
     <background>background\background6</background>
     <background>background\background7</background>
+    <background>background\background8</background>
+    <background>background\background9</background>
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
@@ -78,6 +82,7 @@
     <object>objects\objPlayer_new_new</object>
     <object>objects\objExit</object>
     <object>objects\objTransition</object>
+    <object>objects\objPortal</object>
   </objects>
   <timelines name="timelines">
     <timeline>timelines\time_record</timeline>
@@ -85,8 +90,8 @@
   <rooms name="rooms">
     <room>rooms\Main_Menu</room>
     <room>rooms\Level1</room>
-    <room>rooms\Level_3</room>
     <room>rooms\Level2</room>
+    <room>rooms\Level_3</room>
     <room>rooms\Level_Chris</room>
     <room>rooms\Level_Select</room>
   </rooms>
