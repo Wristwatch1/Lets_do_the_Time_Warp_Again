@@ -73,6 +73,8 @@ global.script_hold[0, 0] = 0;
     {
         //timeline_moment_add_script(global.time_array,step_number, destroy_self);
         recording = false;
+        global.script_hold[global.step_number, 0] = stop_jump;
+        global.script_hold[global.step_number+1, 0] = stop_move;
         for (var i = array_height_2d(global.script_hold)-1; i != 0; i--)
         {
             if (global.script_hold[i, 0] !=-4)
@@ -169,6 +171,8 @@ if (keyboard_check_released(ord("H")))
         recording = false;
         cancel_rec = 25;
         alarm[0] = 0;
+        global.script_hold[global.step_number, 0] = stop_jump;
+        global.script_hold[global.step_number+1, 0] = stop_move;
         for (var i = array_height_2d(global.script_hold)-1; i != 0; i--)
         {
             if (global.script_hold[i, 0] !=-4)
