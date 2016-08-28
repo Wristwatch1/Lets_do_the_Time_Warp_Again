@@ -44,6 +44,7 @@
     <background>background\background8</background>
     <background>background\background9</background>
     <background>background\background10</background>
+    <background>background\background11</background>
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
@@ -97,6 +98,7 @@
     <room>rooms\Level2</room>
     <room>rooms\Level_3</room>
     <room>rooms\Level_Chris</room>
+    <room>rooms\EndofDemo</room>
     <room>rooms\GameOver</room>
   </rooms>
   <help>
