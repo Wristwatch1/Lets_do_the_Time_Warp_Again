@@ -68,23 +68,29 @@ else
         y+=3;
     }
 }
-if (objPlayer.y+(objPlayer.sprite_height/2) &lt; y)
+if ((objPlayer.x &gt; x) &amp;&amp; (objPlayer.x &lt; x+sprite_width))
 {
-    solid = true;
-}
-else
-{
-    solid = false;
-}
-if (instance_exists(objClone))
-{
-    if ((objClone.y+(objClone.sprite_width/2) &lt; y))
+    if (objPlayer.y+(objPlayer.sprite_height/2) &lt; y)
     {
         solid = true;
     }
     else
     {
         solid = false;
+    }
+}
+if (instance_exists(objClone))
+{
+    if ((objClone.x &gt; x) &amp;&amp; objClone.x &lt; x+sprite_width)
+    {
+        if ((objClone.y+(objClone.sprite_width/2) &lt; y))
+        {
+            solid = true;
+        }
+        else
+        {
+            solid = false;
+        }
     }
 }
 </string>
