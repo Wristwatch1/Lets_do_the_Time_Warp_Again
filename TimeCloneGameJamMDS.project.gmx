@@ -29,6 +29,7 @@
     <sprite>sprites\sprRecorderGuy</sprite>
     <sprite>sprites\sprPortal</sprite>
     <sprite>sprites\sprDeadPlayer</sprite>
+    <sprite>sprites\sprDying</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\background0</background>

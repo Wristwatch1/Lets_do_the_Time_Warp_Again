@@ -54,6 +54,29 @@ jump_height = ((jump_height_in_blocks * height_of_block) + jump_height_assist_in
         </arguments>
       </action>
     </event>
+    <event eventtype="2" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>room_restart();
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
     <event eventtype="3" enumb="2">
       <action>
         <libid>1</libid>
@@ -162,13 +185,16 @@ if (hspeed !=0)
 {
     scale = sign(hspeed);
 }
-if(hspeed == 0)
+if (sprite_index != sprDying)
 {
-    sprite_index = sprIdlePlayer;
-}
-else
-{
-    sprite_index = sprTimePlayer;
+    if(hspeed == 0)
+    {
+        sprite_index = sprIdlePlayer;
+    }
+    else
+    {
+        sprite_index = sprTimePlayer;
+    }
 }
 </string>
           </argument>
@@ -811,17 +837,56 @@ if (!place_free(x+hspeed,y+vspeed))
     <event eventtype="5" enumb="82">
       <action>
         <libid>1</libid>
-        <id>223</id>
-        <kind>0</kind>
+        <id>603</id>
+        <kind>7</kind>
         <userelative>0</userelative>
         <isquestion>0</isquestion>
-        <useapplyto>0</useapplyto>
-        <exetype>1</exetype>
-        <functionname>action_current_room</functionname>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
         <codestring></codestring>
         <whoName>self</whoName>
         <relative>0</relative>
         <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>image_speed = 0.05;
+if(sprite_index != sprDying)
+{
+    sprite_index = sprDying;
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="7" enumb="7">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>if (sprite_index == sprDying)
+{
+    image_speed = 0;
+    image_index = image_number-1;
+    alarm[0] = 15;
+}
+</string>
+          </argument>
+        </arguments>
       </action>
     </event>
   </events>
