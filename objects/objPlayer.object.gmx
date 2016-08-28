@@ -48,7 +48,7 @@ game_gravity = 1;
 game_vspeed = 12
 jump_height = ((jump_height_in_blocks * height_of_block) + jump_height_assist_in_pixels) - ((game_vspeed*(game_vspeed + 1)) / 2)
 
-
+window_set_caption("ChronoGlitch");
 </string>
           </argument>
         </arguments>
