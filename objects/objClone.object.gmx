@@ -93,10 +93,16 @@ global.playing = false;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (!left_move &amp;&amp; !right_move)
+            <string>if (!place_meeting(x,y-1,objPlayer) &amp;&amp; !place_meeting(x+1,y,objPlayer) &amp;&amp; !place_meeting(x-1,y,objPlayer))
+{
+    solid = false;
+}
+
+if (!left_move &amp;&amp; !right_move)
 {
     hspeed = 0;
 }
+
 </string>
           </argument>
         </arguments>

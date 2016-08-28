@@ -98,6 +98,10 @@ else if (place_meeting(x,y+1,objElevator))
 {
     grounded = true
 }
+else if (place_meeting(x,y+1,objClone))
+{
+    grounded = true
+}
 else
 {
     grounded = false
@@ -516,6 +520,77 @@ if (!place_free(x+hspeed,y+vspeed))
     if (hspeed&lt;=0){move_contact_solid(180,abs(hspeed));}
     if (hspeed&gt;0){move_contact_solid(0,abs(hspeed));}
     hspeed=0;
+}
+  
+if (!place_free(x,y+vspeed))
+{
+    if (vspeed&lt;=0){move_contact_solid(90,abs(vspeed));}
+    if (vspeed&gt;0)
+    {
+        move_contact_solid(270,abs(vspeed));
+        jumping = false;
+        max_jump = false;
+        
+    }
+    vspeed = 0;
+    
+}
+ 
+if (!place_free(x+hspeed,y+vspeed))
+{
+    hspeed=0;
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>605</id>
+        <kind>0</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>0</useapplyto>
+        <exetype>0</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string></string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="4" ename="objClone">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>with(other)
+{
+    solid = true;
+}
+if (!place_free(x+hspeed,y))
+{
+    if (hspeed&lt;=0){move_contact_solid(180,abs(hspeed));  hspeed=0;}
+    if (hspeed&gt;0){move_contact_solid(0,abs(hspeed));  hspeed=0;}
+   
 }
   
 if (!place_free(x,y+vspeed))
