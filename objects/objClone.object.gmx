@@ -45,6 +45,16 @@ timeline_speed = 1;
 timeline_running = true;
 image_speed = 0.2
 scale = 1;
+
+jump_startY = -9999
+jump_height_in_blocks = 6
+height_of_block = 32
+jump_height_assist_in_pixels = 10
+game_gravity = 1;
+game_vspeed = 6
+jump_height = ((jump_height_in_blocks * height_of_block) + jump_height_assist_in_pixels) - ((game_vspeed*(game_vspeed + 1)) / 2)
+
+
 </string>
           </argument>
         </arguments>
@@ -164,19 +174,18 @@ if (right_move)
     hspeed = 5;
 }
 if (in_air)
-{
-    if ((vspeed &gt; -jump_height) &amp;&amp; !max_jump) 
     {
-        vspeed -=2;
-        gravity = 0;
+        if (((jump_startY - y) &gt;= jump_height) &amp;&amp; !max_jump) 
+        {
+            max_jump = true;
+            gravity = game_gravity;
+        }
+        if (((jump_startY - y) &lt; jump_height) &amp;&amp; !max_jump)
+        {
+            vspeed = -game_vspeed
+            gravity = 0;
+        }
     }
-    if ((vspeed &lt;= -jump_height) &amp;&amp; !max_jump)
-    {
-        max_jump = true;
-        //count++;
-        gravity = 1;
-    }
-}  
 if (hspeed !=0)
 {
     scale = sign(hspeed);

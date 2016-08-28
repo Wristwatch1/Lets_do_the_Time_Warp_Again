@@ -72,6 +72,7 @@
     <object>objects\objDrawText</object>
     <object>objects\objGlobal_SoundController</object>
     <object>objects\obj_RecordingSprite</object>
+    <object>objects\objPlayer_new_new</object>
   </objects>
   <timelines name="timelines">
     <timeline>timelines\time_record</timeline>
