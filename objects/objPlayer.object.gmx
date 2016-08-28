@@ -41,11 +41,11 @@ grounded = false
 scale = 1;
 
 jump_startY = -9999
-jump_height_in_blocks = 6
+jump_height_in_blocks = 3
 height_of_block = 32
 jump_height_assist_in_pixels = 10
 game_gravity = 1;
-game_vspeed = 6
+game_vspeed = 12
 jump_height = ((jump_height_in_blocks * height_of_block) + jump_height_assist_in_pixels) - ((game_vspeed*(game_vspeed + 1)) / 2)
 
 
