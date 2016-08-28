@@ -173,6 +173,7 @@
     <instance objName="objInvisiGround" x="-32" y="336" name="inst_18923ABB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objInvisiGround" x="-32" y="304" name="inst_17DE4A80" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objPortal" x="896" y="434" name="inst_79B631B4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objTextSpawn" x="432" y="528" name="inst_8887559D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

@@ -47,6 +47,7 @@
     <background>background\background9</background>
     <background>background\background10</background>
     <background>background\background11</background>
+    <background>background\background12</background>
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
@@ -83,6 +84,7 @@
     <object>objects\objTime_Wraith</object>
     <object>objects\objElevator</object>
     <object>objects\objDrawText</object>
+    <object>objects\ObjDrawText2</object>
     <object>objects\objGlobal_SoundController</object>
     <object>objects\obj_RecordingSprite</object>
     <object>objects\objPlayer_new_new</object>
@@ -91,6 +93,7 @@
     <object>objects\objPortal</object>
     <object>objects\objArrow</object>
     <object>objects\objTimeOut</object>
+    <object>objects\objTextSpawn</object>
   </objects>
   <timelines name="timelines">
     <timeline>timelines\time_record</timeline>
