@@ -91,6 +91,7 @@
     <object>objects\objPortal</object>
     <object>objects\objArrow</object>
     <object>objects\objTimeOut</object>
+    <object>objects\objDrawNames</object>
   </objects>
   <timelines name="timelines">
     <timeline>timelines\time_record</timeline>
