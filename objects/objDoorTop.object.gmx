@@ -57,6 +57,7 @@ if (y &lt; start_position &amp;&amp; !global.door_active)
 {
     y+=1;
 }
+
 </string>
           </argument>
         </arguments>

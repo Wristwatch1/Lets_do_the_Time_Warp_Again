@@ -112,6 +112,10 @@ else if (place_meeting(x,y+1,objClone))
 {
     grounded = true
 }
+else if (place_meeting(x,y+1,objDoorBottom))
+{
+    grounded = true
+}
 else
 {
     grounded = false
@@ -284,21 +288,27 @@ if (!place_free(x+hspeed,y+vspeed))
   
 if (!place_free(x,y+vspeed))
 {
-    if (vspeed&lt;=0){move_contact_solid(90,abs(vspeed));}
+    if (vspeed&lt;=0){move_contact_solid(90,abs(vspeed));
+    global.door_active = true;}
     if (vspeed&gt;0)
     {
         move_contact_solid(270,abs(vspeed));
         jumping = false;
         max_jump = false;
-        
+        global.door_active = true
     }
     vspeed = 0;
+    with(other)
+    {
+        y+=6;
+    }
     
 }
  
 if (!place_free(x+hspeed,y+vspeed))
 {
     hspeed=0;
+    global.door_active = true;
 }
 </string>
           </argument>
@@ -344,14 +354,19 @@ if (!place_free(x+hspeed,y+vspeed))
             <kind>1</kind>
             <string>if (!place_free(x+hspeed,y))
 {
-    if (hspeed&lt;=0){move_contact_solid(180,abs(hspeed));}
-    if (hspeed&gt;0){move_contact_solid(0,abs(hspeed));}
-    hspeed=0;
+    if (hspeed&lt;=0){move_contact_solid(180,abs(hspeed)); hspeed=0;}
+    if (hspeed&gt;0){move_contact_solid(0,abs(hspeed)); hspeed=0;}
+    
 }
   
 if (!place_free(x,y+vspeed))
 {
-    if (vspeed&lt;=0){move_contact_solid(90,abs(vspeed));}
+    if (vspeed&lt;=0){move_contact_solid(90,abs(vspeed));
+    global.door_active = true
+    with(other)
+    {
+        y-=6
+    }}
     if (vspeed&gt;0)
     {
         move_contact_solid(270,abs(vspeed));
