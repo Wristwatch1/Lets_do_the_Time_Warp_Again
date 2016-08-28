@@ -30,6 +30,7 @@
     <sprite>sprites\sprPortal</sprite>
     <sprite>sprites\sprDeadPlayer</sprite>
     <sprite>sprites\sprDying</sprite>
+    <sprite>sprites\sprArrow</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\background0</background>
@@ -85,6 +86,7 @@
     <object>objects\objExit</object>
     <object>objects\objTransition</object>
     <object>objects\objPortal</object>
+    <object>objects\objArrow</object>
   </objects>
   <timelines name="timelines">
     <timeline>timelines\time_record</timeline>
