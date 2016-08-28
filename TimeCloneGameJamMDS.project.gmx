@@ -90,6 +90,7 @@
     <object>objects\objTransition</object>
     <object>objects\objPortal</object>
     <object>objects\objArrow</object>
+    <object>objects\objTimeOut</object>
   </objects>
   <timelines name="timelines">
     <timeline>timelines\time_record</timeline>
