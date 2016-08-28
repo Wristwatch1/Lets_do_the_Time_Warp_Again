@@ -101,6 +101,7 @@
     <room>rooms\Level2</room>
     <room>rooms\Level_3</room>
     <room>rooms\Level_Chris</room>
+    <room>rooms\Level_Chris_2</room>
     <room>rooms\EndofDemo</room>
     <room>rooms\GameOver</room>
   </rooms>
