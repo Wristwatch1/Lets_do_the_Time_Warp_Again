@@ -20,6 +20,7 @@
     <sprite>sprites\sprDoorTop</sprite>
     <sprite>sprites\sprDoorBottom</sprite>
     <sprite>sprites\sprButton</sprite>
+    <sprite>sprites\sprButton2</sprite>
     <sprite>sprites\sprTimeWraith</sprite>
     <sprite>sprites\sprElevator</sprite>
     <sprite>sprites\sprite11</sprite>
@@ -62,12 +63,14 @@
     <object>objects\objPlayerWall</object>
     <objects name="Door Thing">
       <object>objects\objDoorTop</object>
+      <object>objects\objDoorTop2</object>
       <object>objects\objDoorBottom</object>
+      <object>objects\objDoorBottom2</object>
       <object>objects\objGlobal_VariableSetter</object>
       <object>objects\objButton</object>
+      <object>objects\objButton2</object>
     </objects>
     <object>objects\objTime_Wraith</object>
-    <object>objects\objWall</object>
     <object>objects\objElevator</object>
     <object>objects\objDrawText</object>
     <object>objects\objGlobal_SoundController</object>
@@ -78,8 +81,9 @@
     <timeline>timelines\time_record</timeline>
   </timelines>
   <rooms name="rooms">
-    <room>rooms\Level1</room>
+    <room>rooms\Level_3</room>
     <room>rooms\Level2</room>
+    <room>rooms\Level1</room>
     <room>rooms\Main_Menu</room>
     <room>rooms\Level_Select</room>
   </rooms>
