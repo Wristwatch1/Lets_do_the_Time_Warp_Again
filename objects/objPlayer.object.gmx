@@ -116,16 +116,16 @@ else
 {
     grounded = false
 }
-if (keyboard_check(ord("D")))
+if (keyboard_check(ord("D")) || keyboard_check(vk_right))
 {
     hspeed = 5;
 }
-if (keyboard_check(ord("A")))
+if (keyboard_check(ord("A")) || keyboard_check(vk_left))
 {
     hspeed = -5;
 }
 
-if ((keyboard_check_pressed(vk_space) || keyboard_check_pressed(ord("W"))) &amp;&amp; !jumping &amp;&amp; grounded)
+if ((keyboard_check_pressed(vk_space) || keyboard_check_pressed(vk_up) || keyboard_check_pressed(ord("W"))) &amp;&amp; !jumping &amp;&amp; grounded)
 {
         audio_play_sound(snd_Jump,10,false);
         in_air = true;
@@ -133,7 +133,7 @@ if ((keyboard_check_pressed(vk_space) || keyboard_check_pressed(ord("W"))) &amp;
         jump_startY = y
         vspeed = -game_vspeed
 }
-if ((keyboard_check_released(vk_space) || keyboard_check_released(ord("W"))))
+if ((keyboard_check_released(vk_space) || keyboard_check_released(vk_up) || keyboard_check_released(ord("W"))))
 {
     in_air = false;
     max_jump = true;
