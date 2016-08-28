@@ -140,7 +140,7 @@ if ((keyboard_check_released(vk_space) || keyboard_check_released(ord("W"))))
     gravity = game_gravity;
 }
 
-    if (in_air)
+if (in_air)
     {
         if (((jump_startY - y) &gt;= jump_height) &amp;&amp; !max_jump) 
         {
