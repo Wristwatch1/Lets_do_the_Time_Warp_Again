@@ -180,7 +180,12 @@ if (in_air)
             gravity = 0;
         }
     }
-
+if (sprite_index == sprDying)
+{
+    hspeed = 0;
+    vspeed = 0;
+    audio_stop_sound(snd_Jump);
+}
 if (hspeed !=0)
 {
     scale = sign(hspeed);
