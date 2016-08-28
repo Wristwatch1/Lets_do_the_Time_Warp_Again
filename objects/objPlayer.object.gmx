@@ -856,9 +856,11 @@ if (!place_free(x+hspeed,y+vspeed))
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>image_speed = 0.05;
+            <string>
+image_speed = 0.05;
 if(sprite_index != sprDying)
 {
+    audio_play_sound(snd_Death,10,false);
     sprite_index = sprDying;
 }
 </string>

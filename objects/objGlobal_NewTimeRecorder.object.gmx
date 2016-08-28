@@ -71,6 +71,7 @@ global.script_hold[0, 0] = 0;
     cancel_rec-=1;
     if(cancel_rec == 0)
     {
+        audio_play_sound(snd_ReverseRecord,10,false);
         //timeline_moment_add_script(global.time_array,step_number, destroy_self);
         recording = false;
         global.script_hold[global.step_number, 0] = stop_jump;
@@ -171,6 +172,7 @@ if (keyboard_check_released(vk_control))
         recording = false;
         cancel_rec = 25;
         alarm[0] = 0;
+        audio_play_sound(snd_ReverseRecord,10,false);
         global.script_hold[global.step_number, 0] = stop_jump;
         global.script_hold[global.step_number+1, 0] = stop_move;
         for (var i = array_height_2d(global.script_hold)-1; i != 0; i--)

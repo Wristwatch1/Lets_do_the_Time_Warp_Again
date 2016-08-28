@@ -9,6 +9,8 @@
     <sound>sound\snd_Playback</sound>
     <sound>sound\snd_Record</sound>
     <sound>sound\snd_ScienceSong</sound>
+    <sound>sound\snd_Death</sound>
+    <sound>sound\snd_ReverseRecord</sound>
   </sounds>
   <sprites name="sprites">
     <sprite>sprites\sprTimePlayer</sprite>
