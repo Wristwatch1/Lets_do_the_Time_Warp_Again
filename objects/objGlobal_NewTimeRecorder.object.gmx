@@ -162,7 +162,7 @@ if (recording)
     
     
 }
-if (keyboard_check_released(ord("H")))
+if (keyboard_check_released(vk_control))
 {
     
     if (recording == true)
@@ -202,7 +202,7 @@ if (keyboard_check_released(ord("H")))
     }
 }
 
-if (keyboard_check_released(ord("Z")))
+if (keyboard_check_released(vk_alt))
 {
     if (!instance_exists(objClone))
     {
