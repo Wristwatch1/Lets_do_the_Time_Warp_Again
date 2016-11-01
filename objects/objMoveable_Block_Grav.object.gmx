@@ -8,7 +8,30 @@
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
-    <event eventtype="3" enumb="0">
+    <event eventtype="0" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>gravity = 1
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="3" enumb="2">
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -34,6 +57,92 @@
       {if !place_meeting(x+2,y,objGround) x+=5; } 
  }
  
+
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="4" ename="objInvisiGround">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>if (!place_free(x+hspeed,y))
+{
+    if (hspeed&lt;=0){move_contact_solid(180,abs(hspeed));}
+    if (hspeed&gt;0){move_contact_solid(0,abs(hspeed));}
+    hspeed=0;
+}
+  
+if (!place_free(x,y+vspeed))
+{
+    if (vspeed&lt;=0){move_contact_solid(90,abs(vspeed));}
+    if (vspeed&gt;0)
+    {
+        move_contact_solid(270,abs(vspeed));
+        jumping = false;
+        max_jump = false;
+        
+    }
+    vspeed = 0;
+    
+}
+
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="4" ename="objGround">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>if (!place_free(x+hspeed,y))
+{
+    if (hspeed&lt;=0){move_contact_solid(180,abs(hspeed));}
+    if (hspeed&gt;0){move_contact_solid(0,abs(hspeed));}
+    hspeed=0;
+}
+  
+if (!place_free(x,y+vspeed))
+{
+    if (vspeed&lt;=0){move_contact_solid(90,abs(vspeed));}
+    if (vspeed&gt;0)
+    {
+        move_contact_solid(270,abs(vspeed));
+        jumping = false;
+        max_jump = false;
+        
+    }
+    vspeed = 0;
+    
+}
 
 </string>
           </argument>
