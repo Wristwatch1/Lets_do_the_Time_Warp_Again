@@ -97,13 +97,15 @@
     <object>objects\objTimeOut</object>
     <object>objects\objTextSpawn</object>
     <object>objects\objHazardThing</object>
+    <object>objects\objMoveable_Block</object>
+    <object>objects\objMoveable_Block_Grav</object>
   </objects>
   <timelines name="timelines">
     <timeline>timelines\time_record</timeline>
   </timelines>
   <rooms name="rooms">
-    <room>rooms\Main_Menu</room>
     <room>rooms\Level1</room>
+    <room>rooms\Main_Menu</room>
     <room>rooms\Level2</room>
     <room>rooms\Level_3</room>
     <room>rooms\Level_Chris</room>
