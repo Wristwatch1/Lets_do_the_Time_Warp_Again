@@ -33,6 +33,7 @@
     <sprite>sprites\sprDeadPlayer</sprite>
     <sprite>sprites\sprDying</sprite>
     <sprite>sprites\sprArrow</sprite>
+    <sprite>sprites\sprHazardThing</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\background0</background>
@@ -60,6 +61,7 @@
       <script>scripts\destroy_self.gml</script>
       <script>scripts\blank_move.gml</script>
     </scripts>
+    <script>scripts\gradually_turn.gml</script>
   </scripts>
   <objects name="objects">
     <object>objects\objPlayer</object>
@@ -94,6 +96,7 @@
     <object>objects\objArrow</object>
     <object>objects\objTimeOut</object>
     <object>objects\objTextSpawn</object>
+    <object>objects\objHazardThing</object>
   </objects>
   <timelines name="timelines">
     <timeline>timelines\time_record</timeline>

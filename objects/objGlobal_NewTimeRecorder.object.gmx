@@ -118,41 +118,41 @@ else
           <argument>
             <kind>1</kind>
             <string>///Script for Recording Time, Change values to Change stuff
-key_left = keyboard_check_direct(ord("A"));
-key_right = keyboard_check_direct(ord("D"));
-key_jump = keyboard_check_direct(vk_space);
+key_left = keyboard_check_direct(ord("A")) || keyboard_check_direct(vk_left);
+key_right = keyboard_check_direct(ord("D")) || keyboard_check_direct(vk_right);
+key_jump = keyboard_check_direct(vk_space) || keyboard_check_direct(vk_up) || keyboard_check_direct(ord("W"));
 if (recording)
 {
     global.script_hold[global.step_number, 0] = -4;
     
     
-    if (keyboard_check_pressed(ord("A")))
+    if (keyboard_check_pressed(ord("A")) || keyboard_check_pressed(vk_left))
     {
         show_debug_message(string(global.step_number) + "Move Left");
         //timeline_moment_add_script(time_record, global.step_number, move_left);  
         global.script_hold[global.step_number, 0] = move_left;
         //global.step_number+=1;
     }
-    if (keyboard_check_pressed(ord("D")))
+    if (keyboard_check_pressed(ord("D")) || keyboard_check_pressed(vk_right))
     {
         show_debug_message(string(global.step_number) + "Move Right");
         //timeline_moment_add_script(time_record, global.step_number, move_right); 
         global.script_hold[global.step_number, 0] = move_right;
         //global.step_number+=1;  
     }
-    if (keyboard_check_pressed(vk_space))
+    if (keyboard_check_pressed(vk_space)  || keyboard_check_pressed(ord("W")) || keyboard_check_pressed(vk_up))
     {
         show_debug_message(string(global.step_number) + "Jumping");
         //timeline_moment_add_script(time_record, global.step_number, jump);
         global.script_hold[global.step_number, 0] = jump;
     }
-    if (keyboard_check_released(ord("A")) || keyboard_check_released(ord("D")))
+    if (keyboard_check_released(ord("A")) || keyboard_check_released(ord("D"))  || keyboard_check_released(vk_left) || keyboard_check_released(vk_right))
     {
         show_debug_message(string(global.step_number) + "Stop Move");
        //timeline_moment_add_script(time_record, global.step_number, stop_move);
        global.script_hold[global.step_number, 0] = stop_move;
     }
-    if (keyboard_check_released(vk_space))
+    if (keyboard_check_released(vk_space)   || keyboard_check_released(ord("W")) || keyboard_check_released(vk_up))
     {
         show_debug_message(string(global.step_number) + "Stop Jumping");
         //timeline_moment_add_script(time_record, global.step_number, stop_jump);
