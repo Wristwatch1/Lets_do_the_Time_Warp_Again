@@ -63,6 +63,14 @@
       <script>scripts\blank_move.gml</script>
     </scripts>
     <script>scripts\gradually_turn.gml</script>
+    <script>scripts\gamepad_init.gml</script>
+    <script>scripts\gamepad_right.gml</script>
+    <script>scripts\gamepad_left.gml</script>
+    <script>scripts\gamepad_jump.gml</script>
+    <script>scripts\gamepad_jump_release.gml</script>
+    <script>scripts\gamepad_jump_direct.gml</script>
+    <script>scripts\gamepad_record.gml</script>
+    <script>scripts\gamepad_playback.gml</script>
   </scripts>
   <objects name="objects">
     <object>objects\objPlayer</object>
@@ -106,8 +114,8 @@
     <timeline>timelines\time_record</timeline>
   </timelines>
   <rooms name="rooms">
-    <room>rooms\Main_Menu</room>
     <room>rooms\Level1</room>
+    <room>rooms\Main_Menu</room>
     <room>rooms\Level2</room>
     <room>rooms\Level_3</room>
     <room>rooms\Level_Chris</room>
