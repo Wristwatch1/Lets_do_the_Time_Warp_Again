@@ -34,6 +34,7 @@
     <sprite>sprites\sprDying</sprite>
     <sprite>sprites\sprArrow</sprite>
     <sprite>sprites\sprHazardThing</sprite>
+    <sprite>sprites\sprPlayerZone</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\background0</background>
@@ -99,6 +100,7 @@
     <object>objects\objHazardThing</object>
     <object>objects\objMoveable_Block</object>
     <object>objects\objMoveable_Block_Grav</object>
+    <object>objects\objPlayerOnlyZone</object>
   </objects>
   <timelines name="timelines">
     <timeline>timelines\time_record</timeline>

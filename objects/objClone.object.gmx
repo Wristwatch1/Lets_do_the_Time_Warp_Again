@@ -54,7 +54,7 @@ game_gravity = 1;
 game_vspeed = 12
 jump_height = ((jump_height_in_blocks * height_of_block) + jump_height_assist_in_pixels) - ((game_vspeed*(game_vspeed + 1)) / 2)
 
-
+zone_collide = false;
 </string>
           </argument>
         </arguments>
@@ -140,6 +140,10 @@ if(timeline_size(time_record) == 0)
 {
     image_alpha-= 0.01;
 }
+if (zone_collide)
+{
+    image_alpha-= 0.075;
+}
 image_xscale = scale;
 if(timeline_position &gt; timeline_max_moment(time_record))
 {
@@ -198,6 +202,29 @@ else
 {
     sprite_index = sprTimeClone;
 }
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="4" ename="objPlayerOnlyZone">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>zone_collide = true;
 </string>
           </argument>
         </arguments>
