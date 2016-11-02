@@ -144,6 +144,45 @@
     <instance objName="objPortal" x="896" y="562" name="inst_06126607" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objArrow" x="864" y="608" name="inst_50F3CEB3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objHazardThing" x="256" y="496" name="inst_F1037427" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objTestGlitch" x="160" y="416" name="inst_0054D5E1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objAnomalyHandler" x="304" y="400" name="inst_24EB38A1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objAnomalyGround" x="192" y="80" name="inst_B132FEC6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objAnomalyGround" x="192" y="112" name="inst_A02BFF9F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objAnomalyGround" x="192" y="144" name="inst_2475A7EC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objAnomalyGround" x="192" y="176" name="inst_CA5A6A50" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objAnomalyGround" x="224" y="80" name="inst_4CBC40A7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objAnomalyGround" x="256" y="112" name="inst_56708256" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objAnomalyGround" x="256" y="144" name="inst_2D4DBD32" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objAnomalyGround" x="224" y="176" name="inst_0C67FAC3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objAnomalyGround" x="304" y="176" name="inst_0D846167" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objAnomalyGround" x="304" y="144" name="inst_F4FCAFF6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objAnomalyGround" x="304" y="112" name="inst_C69E455D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objAnomalyGround" x="304" y="80" name="inst_375A428B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objAnomalyGround" x="336" y="80" name="inst_BA3D78D7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objAnomalyGround" x="368" y="80" name="inst_F89A3DE3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objAnomalyGround" x="368" y="112" name="inst_4C398D38" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objAnomalyGround" x="368" y="144" name="inst_0FFDFBCD" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objAnomalyGround" x="368" y="176" name="inst_929AC4D2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objAnomalyGround" x="336" y="144" name="inst_1F43B915" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objAnomalyGround" x="416" y="176" name="inst_962C6791" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objAnomalyGround" x="416" y="144" name="inst_82EC5138" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objAnomalyGround" x="416" y="112" name="inst_456D0FAE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objAnomalyGround" x="416" y="80" name="inst_C995F8A3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objAnomalyGround" x="448" y="112" name="inst_70142405" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objAnomalyGround" x="496" y="144" name="inst_DC281186" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objAnomalyGround" x="496" y="176" name="inst_5BEC00EB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objAnomalyGround" x="496" y="112" name="inst_99350616" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objAnomalyGround" x="496" y="80" name="inst_EDBF62AA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objAnomalyGround" x="464" y="144" name="inst_171EF1BA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objAnomalyGround" x="544" y="80" name="inst_8F6C1890" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objAnomalyGround" x="544" y="112" name="inst_8EC37151" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objAnomalyGround" x="544" y="144" name="inst_FEA0595F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objAnomalyGround" x="544" y="176" name="inst_78ECDDA3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objAnomalyGround" x="576" y="160" name="inst_5375F485" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objAnomalyGround" x="608" y="176" name="inst_DD19476E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objAnomalyGround" x="576" y="96" name="inst_DC20DC88" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objAnomalyGround" x="608" y="80" name="inst_D39E93BC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objAnomalyGround" x="576" y="128" name="inst_8C22CB3C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

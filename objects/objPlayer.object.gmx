@@ -184,6 +184,21 @@ if (in_air)
             gravity = 0;
         }
     }
+if (gamepad_kill())
+{
+    image_speed = 0.05;
+    if(sprite_index != sprDying)
+    {
+        audio_play_sound(snd_Death,10,false);
+        sprite_index = sprDying;
+    }
+}
+
+if(gamepad_instakill())
+{
+    room_restart();
+}
+
 if (sprite_index == sprDying)
 {
     hspeed = 0;

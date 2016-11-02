@@ -67,6 +67,8 @@
     <script>scripts\gamepad_right.gml</script>
     <script>scripts\gamepad_left.gml</script>
     <script>scripts\gamepad_jump.gml</script>
+    <script>scripts\gamepad_kill.gml</script>
+    <script>scripts\gamepad_instakill.gml</script>
     <script>scripts\gamepad_jump_release.gml</script>
     <script>scripts\gamepad_jump_direct.gml</script>
     <script>scripts\gamepad_record.gml</script>
@@ -111,6 +113,14 @@
     <object>objects\objMoveable_Block</object>
     <object>objects\objMoveable_Block_Grav</object>
     <object>objects\objPlayerOnlyZone</object>
+    <object>objects\objTestGlitch</object>
+    <objects name="Time Anomaly Objects">
+      <object>objects\objAnomalyGround</object>
+      <object>objects\objInvisAnomalyGround</object>
+      <object>objects\objMoveableBlockAnomaly</object>
+      <object>objects\objMoveableBlock_Grav_Anomaly</object>
+    </objects>
+    <object>objects\objAnomalyHandler</object>
   </objects>
   <timelines name="timelines">
     <timeline>timelines\time_record</timeline>
