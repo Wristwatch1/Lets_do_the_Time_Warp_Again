@@ -22,6 +22,7 @@
     <sprite>sprites\sprDoorTop</sprite>
     <sprite>sprites\sprDoorBottom</sprite>
     <sprite>sprites\sprButton</sprite>
+    <sprite>sprites\sprForeverButton</sprite>
     <sprite>sprites\sprButton2</sprite>
     <sprite>sprites\sprTimeWraith</sprite>
     <sprite>sprites\sprElevator</sprite>
@@ -97,7 +98,9 @@
       <object>objects\objDoorBottom2</object>
       <object>objects\objGlobal_VariableSetter</object>
       <object>objects\objButton</object>
+      <object>objects\objForeverButton</object>
       <object>objects\objButton2</object>
+      <object>objects\objForeverDoorSetup</object>
     </objects>
     <object>objects\objTime_Wraith</object>
     <object>objects\objElevator</object>
@@ -127,13 +130,14 @@
     <objects name="HazardStuff">
       <object>objects\objLaser</object>
     </objects>
+    <object>objects\objGameHandler</object>
   </objects>
   <timelines name="timelines">
     <timeline>timelines\time_record</timeline>
   </timelines>
   <rooms name="rooms">
-    <room>rooms\Level1</room>
     <room>rooms\Main_Menu</room>
+    <room>rooms\Level1</room>
     <room>rooms\Level2</room>
     <room>rooms\Level_3</room>
     <room>rooms\Level_Chris</room>
