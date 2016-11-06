@@ -33,8 +33,11 @@
     <sprite>sprites\sprDeadPlayer</sprite>
     <sprite>sprites\sprDying</sprite>
     <sprite>sprites\sprArrow</sprite>
-    <sprite>sprites\sprHazardThing</sprite>
     <sprite>sprites\sprPlayerZone</sprite>
+    <sprites name="Hazard Sprite Things">
+      <sprite>sprites\sprHazardThing</sprite>
+      <sprite>sprites\sprLaser</sprite>
+    </sprites>
   </sprites>
   <backgrounds name="background">
     <background>background\background0</background>
@@ -121,6 +124,9 @@
       <object>objects\objMoveableBlock_Grav_Anomaly</object>
     </objects>
     <object>objects\objAnomalyHandler</object>
+    <objects name="HazardStuff">
+      <object>objects\objLaser</object>
+    </objects>
   </objects>
   <timelines name="timelines">
     <timeline>timelines\time_record</timeline>

@@ -46,6 +46,12 @@ if(abs(facingMinusTarget) > 180)
 
 // Gradually rotate object
 var leastAccurateAim = 30;
+
+if (angleDiff >= 0 && angleDiff <= 5)
+{
+    return true;
+}
+
 if(angleDiff > leastAccurateAim * accuracy)
 {
     objToTurn.direction -= turnSpeed * delta_time;
@@ -54,3 +60,5 @@ else if(angleDiff < leastAccurateAim * accuracy)
 {
     objToTurn.direction += turnSpeed * delta_time;
 }
+
+
