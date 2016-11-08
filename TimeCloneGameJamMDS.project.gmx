@@ -117,6 +117,7 @@
     <object>objects\objTextSpawn</object>
     <object>objects\objHazardThing</object>
     <object>objects\objMoveable_Block</object>
+    <object>objects\objKeepStateBlock</object>
     <object>objects\objMoveable_Block_Grav</object>
     <object>objects\objPlayerOnlyZone</object>
     <object>objects\objTestGlitch</object>
