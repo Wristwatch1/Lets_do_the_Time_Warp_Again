@@ -50,10 +50,10 @@
             <kind>1</kind>
             <string>place_meeting(x,y-2,objPlayer) 
  { 
-      if place_meeting(x+2,y,objPlayer) and keyboard_check(vk_left) || place_meeting(x+2,y,objPlayer) and keyboard_check_direct(ord("A") || place_meeting(x+2,y,objPlayer) and gamepad_left())
+      if place_meeting(x+2,y,objPlayer) and keyboard_check(vk_left) || place_meeting(x+2,y,objPlayer) and keyboard_check_direct(ord("A")) || place_meeting(x+2,y,objPlayer) and gamepad_left()
       {if !place_meeting(x-2,y,objGround) x-=5; }
 
-      if place_meeting(x-2,y,objPlayer) and keyboard_check(vk_right) || place_meeting(x-2,y,objPlayer) and keyboard_check_direct(ord("D") || place_meeting(x+2,y,objPlayer) and gamepad_right())
+      if place_meeting(x-2,y,objPlayer) and keyboard_check(vk_right) || place_meeting(x-2,y,objPlayer) and keyboard_check_direct(ord("D")) || place_meeting(x-2,y,objPlayer) and gamepad_right()
       {if !place_meeting(x+2,y,objGround) x+=5; } 
  }
  
