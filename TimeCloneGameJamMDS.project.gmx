@@ -35,6 +35,7 @@
     <sprite>sprites\sprDying</sprite>
     <sprite>sprites\sprArrow</sprite>
     <sprite>sprites\sprPlayerZone</sprite>
+    <sprite>sprites\sprCloneZone</sprite>
     <sprites name="Hazard Sprite Things">
       <sprite>sprites\sprHazardThing</sprite>
       <sprite>sprites\sprLaser</sprite>
@@ -120,6 +121,7 @@
     <object>objects\objKeepStateBlock</object>
     <object>objects\objMoveable_Block_Grav</object>
     <object>objects\objPlayerOnlyZone</object>
+    <object>objects\objCloneOnlyZone</object>
     <object>objects\objTestGlitch</object>
     <objects name="Time Anomaly Objects">
       <object>objects\objAnomalyGround</object>
@@ -138,10 +140,11 @@
   </timelines>
   <rooms name="rooms">
     <room>rooms\Main_Menu</room>
+    <room>rooms\Level_7</room>
+    <room>rooms\Level_Chris</room>
     <room>rooms\Level1</room>
     <room>rooms\Level2</room>
     <room>rooms\Level_3</room>
-    <room>rooms\Level_Chris</room>
     <room>rooms\Level5</room>
     <room>rooms\Level_Chris_2</room>
     <room>rooms\EndofDemo</room>
