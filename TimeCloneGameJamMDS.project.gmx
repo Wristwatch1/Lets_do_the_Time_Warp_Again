@@ -140,13 +140,13 @@
   </timelines>
   <rooms name="rooms">
     <room>rooms\Main_Menu</room>
-    <room>rooms\Level_7</room>
-    <room>rooms\Level_Chris</room>
     <room>rooms\Level1</room>
     <room>rooms\Level2</room>
     <room>rooms\Level_3</room>
+    <room>rooms\Level_Chris</room>
     <room>rooms\Level5</room>
     <room>rooms\Level_Chris_2</room>
+    <room>rooms\Level_7</room>
     <room>rooms\EndofDemo</room>
     <room>rooms\GameOver</room>
   </rooms>

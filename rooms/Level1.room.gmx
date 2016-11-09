@@ -143,12 +143,9 @@
     <instance objName="objGround" x="-32" y="272" name="inst_D3FE1B87" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objPortal" x="896" y="562" name="inst_06126607" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objArrow" x="864" y="608" name="inst_50F3CEB3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objHazardThing" x="256" y="496" name="inst_F1037427" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objTestGlitch" x="160" y="416" name="inst_0054D5E1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objAnomalyHandler" x="304" y="400" name="inst_24EB38A1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objForeverButton" x="288" y="592" name="inst_C1350063" locked="0" code="" scaleX="2" scaleY="2" colour="4294967295" rotation="0"/>
     <instance objName="objForeverDoorSetup" x="176" y="592" name="inst_E361B008" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objKeepStateBlock" x="480" y="608" name="inst_EC3D1148" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>
