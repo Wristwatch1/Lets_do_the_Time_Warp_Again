@@ -81,7 +81,7 @@ shot_gun = false;
             <kind>1</kind>
             <string>if (gradually_turn(self, objPlayer, 6, 30) &amp;&amp; shot_gun == false)
 {
-    alarm[0] = 15;
+    alarm[0] = 25;
     shot_gun = true;
 }
 image_angle = direction;
