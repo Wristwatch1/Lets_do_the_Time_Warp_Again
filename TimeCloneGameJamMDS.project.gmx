@@ -149,6 +149,9 @@
     <room>rooms\Level_7</room>
     <room>rooms\EndofDemo</room>
     <room>rooms\GameOver</room>
+    <rooms name="New Levels">
+      <room>rooms\NewChrisLevel_Lasers</room>
+    </rooms>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
