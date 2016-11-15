@@ -134,6 +134,7 @@
       <object>objects\objLaser</object>
     </objects>
     <object>objects\objGameHandler</object>
+    <object>objects\objSwapper</object>
   </objects>
   <timelines name="timelines">
     <timeline>timelines\time_record</timeline>
@@ -151,6 +152,8 @@
     <room>rooms\GameOver</room>
     <rooms name="New Levels">
       <room>rooms\NewChrisLevel_Lasers</room>
+      <room>rooms\Level_GeistGeistGeist</room>
+      <room>rooms\Level_LargeLargeLarge</room>
     </rooms>
   </rooms>
   <help>

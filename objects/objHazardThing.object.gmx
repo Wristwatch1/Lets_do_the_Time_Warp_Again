@@ -79,12 +79,16 @@ shot_gun = false;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (gradually_turn(self, objPlayer, 6, 30) &amp;&amp; shot_gun == false)
+            <string>if (distance_to_point(objPlayer.x, objPlayer.y) &lt; 200)
 {
-    alarm[0] = 25;
-    shot_gun = true;
+    if (gradually_turn(self, objPlayer, 8, 30) &amp;&amp; shot_gun == false)
+    {
+        alarm[0] = 25;
+        shot_gun = true;
+    }
 }
 image_angle = direction;
+
 </string>
           </argument>
         </arguments>
