@@ -65,6 +65,59 @@
     <background>background\background10</background>
     <background>background\background11</background>
     <background>background\background12</background>
+    <background>background\bk_title</background>
+    <backgrounds name="Blue_Sky">
+      <background>background\Blue_Sky</background>
+      <background>background\Blue_First</background>
+      <background>background\Blue_Second</background>
+      <background>background\Blue_Third</background>
+      <background>background\Blue_Fourth</background>
+      <background>background\Blue_Fifth</background>
+    </backgrounds>
+    <backgrounds name="Dark_Sky">
+      <background>background\Dark_Sky</background>
+      <background>background\Dark_First</background>
+      <background>background\Dark_Second</background>
+      <background>background\Dark_Third</background>
+      <background>background\Dark_Fourth</background>
+      <background>background\Dark_Fifth</background>
+    </backgrounds>
+    <backgrounds name="Green_Sky">
+      <background>background\Green_Sky</background>
+      <background>background\Green_First</background>
+      <background>background\Green_Second</background>
+      <background>background\Green_Third</background>
+      <background>background\Green_Fourth</background>
+      <background>background\Green_Fifth</background>
+    </backgrounds>
+    <backgrounds name="PPT">
+      <background>background\PPT_1</background>
+      <background>background\PPT_2</background>
+    </backgrounds>
+    <backgrounds name="Purple_Sky">
+      <background>background\Purple_Sky</background>
+      <background>background\Purple_First</background>
+      <background>background\Purple_Second</background>
+      <background>background\Purple_Third</background>
+      <background>background\Purple_Fourth</background>
+      <background>background\Purple_Fifth</background>
+    </backgrounds>
+    <backgrounds name="Red_Sky">
+      <background>background\Red_Sky</background>
+      <background>background\Red_First</background>
+      <background>background\Red_Second</background>
+      <background>background\Red_Third</background>
+      <background>background\Red_Fourth</background>
+      <background>background\Red_Fifth</background>
+    </backgrounds>
+    <backgrounds name="Yellow_Sky">
+      <background>background\Yellow_Sky</background>
+      <background>background\Yellow_First</background>
+      <background>background\Yellow_Second</background>
+      <background>background\Yellow_Third</background>
+      <background>background\Yellow_Fourth</background>
+      <background>background\Yellow_fifth</background>
+    </backgrounds>
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
@@ -161,13 +214,11 @@
     <room>rooms\Level5</room>
     <room>rooms\Level_Chris_2</room>
     <room>rooms\Level_7</room>
+    <room>rooms\NewChrisLevel_Lasers</room>
+    <room>rooms\Level_GeistGeistGeist</room>
+    <room>rooms\Level_LargeLargeLarge</room>
     <room>rooms\EndofDemo</room>
     <room>rooms\GameOver</room>
-    <rooms name="New Levels">
-      <room>rooms\NewChrisLevel_Lasers</room>
-      <room>rooms\Level_GeistGeistGeist</room>
-      <room>rooms\Level_LargeLargeLarge</room>
-    </rooms>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
