@@ -52,6 +52,38 @@ game_vspeed = 12
 jump_height = ((jump_height_in_blocks * height_of_block) + jump_height_assist_in_pixels) - ((game_vspeed*(game_vspeed + 1)) / 2)
 
 window_set_caption("ChronoGlitch");
+
+
+//Just creating a reference that is used in the post draw event
+ppsurface = surface_create(surface_get_width(application_surface),surface_get_height(application_surface));
+surface_set_target(ppsurface);
+draw_clear_alpha(0, 0);
+surface_reset_target();
+
+//Just creating a reference that is used in the post draw event
+if !surface_exists(global.blursurface)
+{
+    global.blursurface = surface_create(surface_get_width(application_surface),surface_get_height(application_surface));
+}
+surface_set_target(global.blursurface);
+draw_clear_alpha(0, 0);
+surface_reset_target();
+
+
+
+//Just creating a reference that is used in the post draw event
+if !surface_exists(global.blursurfacetemp)
+{
+    global.blursurfacetemp = surface_create(surface_get_width(application_surface),surface_get_height(application_surface));
+}
+
+surface_set_target(global.blursurfacetemp);
+draw_clear_alpha(0, 0);
+surface_reset_target();
+
+resolutionuniform = shader_get_uniform(vcr_noise, "iResolution");
+timeuniform = shader_get_uniform(vcr_noise, "iGlobalTime");
+
 </string>
           </argument>
         </arguments>
@@ -248,6 +280,10 @@ if (sprite_index != sprDying)
         sprite_index = sprTimePlayer;
     }
 }
+
+shader_set_uniform_f(resolutionuniform,window_get_width(),window_get_height(),1.0);
+shader_set_uniform_f(timeuniform,get_timer() );
+
 </string>
           </argument>
         </arguments>
@@ -749,6 +785,7 @@ if (!place_free(x,y+vspeed))
 if (!place_free(x+hspeed,y+vspeed))
 {
     hspeed=0;
+    global.door_active = true;
 }
 </string>
           </argument>
@@ -1300,6 +1337,85 @@ if(sprite_index != sprDying)
     image_index = image_number-1;
     alarm[0] = 15;
 }
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="8" enumb="77">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>//alive check for surface
+//recreates if dead for any reason
+if !surface_exists(ppsurface)
+{
+    ppsurface = surface_create(surface_get_width(application_surface),surface_get_height(application_surface));
+}
+
+if !surface_exists(global.blursurface)
+{
+    global.blursurface = surface_create(surface_get_width(application_surface),surface_get_height(application_surface));
+}
+
+if !surface_exists(global.blursurfacetemp)
+{
+    global.blursurfacetemp = surface_create(surface_get_width(application_surface),surface_get_height(application_surface));
+}
+
+
+//Copy screen to surface
+
+asurf = application_surface;
+surface_set_target(asurf);
+
+surface_copy(ppsurface,0,0,application_surface);
+
+
+draw_clear_alpha(0, 0);
+
+//shader_set(vcr_noise)
+draw_surface(ppsurface,0,0);
+//shader_reset()
+surface_reset_target();
+//Draw Blur
+
+
+surface_set_target(global.blursurface);
+fDelta = delta_time / 1000000;
+alphaamount = lerp(0.7,1,fDelta);
+
+surface_copy(global.blursurfacetemp,0,0,global.blursurface);
+draw_clear_alpha(0, 0);
+draw_surface_ext(global.blursurfacetemp,0,0,1,1,0,make_colour_rgb(255,255,255),alphaamount);
+
+
+
+if(global.isrecording)
+{
+    //Draw player echo if we are recording
+    draw_self();
+}
+
+surface_reset_target();
+
+surface_set_target(asurf);
+
+draw_surface(global.blursurface,0,0);
+surface_reset_target();
 </string>
           </argument>
         </arguments>

@@ -43,9 +43,12 @@ moving = false;
 cancel_rec = 25;
 global.step_number = 0;
 global.playing = false;
+global.isrecording = false; 
 global.script_hold[0, 0] = 0;
 left_held = false;
 right_held = false;
+
+
 </string>
           </argument>
         </arguments>
@@ -170,7 +173,8 @@ if (keyboard_check_released(vk_control) || gamepad_record())
     
     if (recording == true)
     {
-        
+        global.isrecording = false;    
+    
         recording = false;
         cancel_rec = 25;
         alarm[0] = 0;
@@ -200,6 +204,8 @@ if (keyboard_check_released(vk_control) || gamepad_record())
         timeline_index = -1;
         recording = true;
         audio_play_sound(snd_Record,10,false);
+        
+        global.isrecording = true;
         
         alarm[0] = room_speed;
         exit;

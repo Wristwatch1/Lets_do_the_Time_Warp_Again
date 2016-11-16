@@ -27,6 +27,23 @@
             <kind>1</kind>
             <string>global.foreverDoor = 0;
 global.pushBlockPosition = ds_map_create();
+
+
+global.blursurface = surface_create(surface_get_width(application_surface),surface_get_height(application_surface));
+surface_set_target(global.blursurface);
+draw_clear_alpha(0, 0);
+surface_reset_target();
+
+
+
+//Just creating a reference that is used in the post draw event
+
+global.blursurfacetemp = surface_create(surface_get_width(application_surface),surface_get_height(application_surface));
+surface_set_target(global.blursurfacetemp);
+draw_clear_alpha(0, 0);
+surface_reset_target();
+global.isrecording = false;
+room_goto_next();
 </string>
           </argument>
         </arguments>
