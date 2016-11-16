@@ -50,6 +50,10 @@
       <sprite>sprites\sprCloneMove</sprite>
       <sprite>sprites\sprCloneJump</sprite>
     </sprites>
+    <sprite>sprites\sprMenu1</sprite>
+    <sprite>sprites\sprMenu2</sprite>
+    <sprite>sprites\sprMenu3</sprite>
+    <sprite>sprites\sprMenu4</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\background0</background>
@@ -118,6 +122,7 @@
       <background>background\Yellow_Fourth</background>
       <background>background\Yellow_fifth</background>
     </backgrounds>
+    <background>background\bkNewMenu</background>
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
@@ -201,6 +206,11 @@
     </objects>
     <object>objects\objGameHandler</object>
     <object>objects\objSwapper</object>
+    <object>objects\objParralaxer</object>
+    <object>objects\objMenu1</object>
+    <object>objects\objMenu2</object>
+    <object>objects\objMenu3</object>
+    <object>objects\objMenu4</object>
   </objects>
   <timelines name="timelines">
     <timeline>timelines\time_record</timeline>
